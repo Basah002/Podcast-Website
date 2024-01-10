@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>newPodcast</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/forms.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+</head>
+
+<body id="body">
+
+    <header>
+        <img class="titlePicture" width="200" height="100" src="assets/img/LoremIpsum.png" alt="Logo Episiode">
+        <h1>NewPodcast</h1>
+    </header>
+
+    <nav>
+        <p class="main">
+            <a href="index.html">Abonnierte Podcast</a>
+            | <a href="podcast.html"> Details zum Podcast</a>
+            | <a href="episode.html"> Details zur Episode</a>
+            | <a href="index2.html">Abonnierte Podcast 2</a>
+        </p>
+    </nav>
+
+    <main>
+
+        <form action="https://labs.inf.fh-dortmund.de/podcastService/testCreatePodcast.php" method="post">
+
+            <fieldset>
+                <legend>Podcast-Information</legend>
+                <label class="required"> Titel
+                    <input type="text" name="pctitle" required pattern="[A-Z][a-zA-Z\s\d]*" size="20" maxlength="100"
+                        placeholder="Titel angeben">
+                </label> <br> <br>
+
+                <label>Beschreibung
+                    <textarea name="pcdescription" maxlength="500">
+                    </textarea>
+                </label>
+                <br><br>
+                <label>Kategorie(n)
+
+                    <select name="pccategories" size="3" multiple>
+                        <option value="Krimi">Krimi</option>
+                        <option value="Thriller">Thriller</option>
+                        <option value="Horror">Horror</option>
+                    </select>
+
+                </label><br><br>
+
+            </fieldset>
+            <fieldset>
+                <legend>Verantwortliche Person</legend>
+                <label class="required">Autoren
+                    <input type="text" name="pcauthors" required pattern="[A-Z][a-zA-Z\s\d,]*[^,]"
+                        placeholder="Bitte einen Autor angeben">
+                </label>
+                <br><br>
+
+                <label class="required">Name des Besitzers
+
+                    <input type="text" name="pcownername" placeholder="Name eingeben" required>
+                </label>
+                <br><br>
+                <label class="required mail"> Email des Besitzers
+                    <input type="email" name="pcowneremail" placeholder="Email angeben" required>
+                </label><br><br>
+
+                <label class="required">Letztes Update (Datum)
+
+                    <input type="date" name="pclastupdatedate" min="2000-01-01" required>
+                </label><br><br>
+
+                <label class="required">Letztes Update (Uhrzeit)
+                    <input type="time" name="pclastupdatetime" required>
+                </label>
+            </fieldset>
+            <br><br>
+            <input type="submit" value="Finden">
+            <strong>
+
+            </strong>
+        </form>
+    </main>
+    <aside>
+
+        <h2> Neueste Episoden</h2>
+        <ul>
+            <li> 20.10.2022: Die Yacht des Verrats - Die Yacht von Mr.Kukili wurde von den Betrügern
+                erbeutet.</li>
+
+
+        </ul>
+
+    </aside>
+
+    <footer>
+        <p> &copy; by WebTech Inc.</p>
+    </footer>
+
+
+</body>
+
+</html>

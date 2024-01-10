@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Liste der abonnierten Podcasts</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/flex.css">
+    <link rel="stylesheet" href="css/index.css">
+
+
+</head>
+
+
+<body>
+
+    <header>
+        <img class="titlePicture" width="200" height="100" src="img/DiedreiFragezeichen.jpeg"
+            alt="Logo Episiode">
+        <h1>Liste der abonnierten Podcasts</h1>
+    </header>
+
+    <nav>
+        <p class="main">
+
+            <a href="podcast.ejs">Details zum Podcast </a>
+            | <a href="episode.ejs">Details zur Episode </a>
+            | <a href="newPodcast.html">Neuer Pordcast</a>
+            | <a href="index2.html">Abonnierte Podcast 2</a>
+        </p>
+
+    </nav>
+
+
+    <main id="indexcontain">
+
+        <div>
+
+            <h2> <strong>Ihre abonnierten Podcasts</strong></h2>
+
+            <button id="btn1"> Kachelansicht</button>
+            <ul id="liste">
+                    <!-- Schleife: Für jedes Element im Array "greetings" wird ein li-Element erzeugt -->
+                    <% for (podcast of liste) { %>
+                    <!-- Im li-Element wird der aktuelle Wert von "greeting" und "name" ausgegeben -->
+                    <li><%= podcast.title %>, <%= podcast.episode.length %>!</li>
+                    <% } %>
+            </ul>
+        </div>
+        <br>
+        <form id="search" action="https://labs.inf.fh-dortmund.de/podcastService/testPodcastSearch.php" method="get">
+
+            <label> Suchbegriff
+                <input type="text" name="pctitle" required pattern="[A-Z][a-zA-Z\s\d]*" size="20" maxlength="100"
+                    placeholder="Gesuchter Podcast ">
+            </label>
+            <input type="submit" value="Finden">
+        </form>
+    </main>
+
+    <aside id="index">
+
+        <h2> Neueste Episoden</h2>
+        <ul>
+            <li> 20.10.2022: Die Yacht des Verrats - Die Yacht von Mr.Kukili wurde von den Betrügern
+                erbeutet.</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p> &copy; by WebTech Inc.</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
+
+
+</html>

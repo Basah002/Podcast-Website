@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Liste der abonnierten Podcasts</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/forms.css">
+    <link rel="stylesheet" href="assets/css/flex.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+
+
+</head>
+
+
+<body>
+
+    <header>
+        <img class="titlePicture" width="200" height="100" src="assets/img/DiedreiFragezeichen.jpeg"
+            alt="Logo Episiode">
+        <h1>Liste der abonnierten Podcasts</h1>
+    </header>
+
+    <nav>
+        <p class="main">
+
+            <a href="podcast.html">Details zum Podcast </a>
+            | <a href="episode.html">Details zur Episode </a>
+            | <a href="newPodcast.html">Neuer Pordcast</a>
+            | <a href="index2.html">Abonnierte Podcast 2</a>
+        </p>
+
+    </nav>
+
+
+    <main id="indexcontain">
+
+        <div>
+
+            <h2> <strong>Ihre abonnierten Podcasts</strong></h2>
+
+            <button id="btn1"> Listenansichts</button>
+            <ul id="liste">
+
+                <li> <a href="podcast.html">Die drei Fragezeichen</a> ~ 286 Epis</li>
+                <li> Harry Potter ~ 126 Epis</li>
+                <li> Yurumi Gang ~ 26 Epis</li>
+
+
+            </ul>
+        </div>
+        <br>
+        <form id="search" action="https://labs.inf.fh-dortmund.de/podcastService/testPodcastSearch.php" method="get">
+
+            <label> Suchbegriff
+                <input type="text" name="pctitle" required pattern="[A-Z][a-zA-Z\s\d]*" size="20" maxlength="100"
+                    placeholder="Gesuchter Podcast ">
+            </label>
+            <input type="submit" value="Finden">
+        </form>
+    </main>
+
+    <aside id="index">
+
+        <h2> Neueste Episoden</h2>
+        <ul>
+            <li> 20.10.2022: Die Yacht des Verrats - Die Yacht von Mr.Kukili wurde von den Betrügern
+                erbeutet.</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p> &copy; by WebTech Inc.</p>
+    </footer>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/index.js"></script>
+
+
+</html>

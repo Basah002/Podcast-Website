@@ -1,0 +1,90 @@
+/*
+Responsive
+*/
+#pod {
+    display: grid;
+    grid-template-areas: "information figure"
+        "episode episode";
+
+}
+
+@media screen and (max-width:768px) {
+    #body {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "header"
+            "nav"
+            "main"
+            "aside"
+            "footer";
+    }
+    
+
+}
+@media screen and (max-width:480px) {
+  
+    #pod {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "information"
+                              "episode"
+                            "figure";
+        }
+
+}
+
+#img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+body {
+    display: grid;
+    grid-template-columns: auto 45%;
+    grid-template-areas: "header header"
+        "nav nav"
+        "main aside"
+        "footer footer";
+}
+
+
+#Information {
+    grid-area: information;
+}
+
+#figure {
+    grid-area: figure;
+}
+
+#Episode {
+    grid-area: episode;
+}
+
+header {
+    width: 100%;
+    grid-area: header;
+}
+
+nav {
+    width: 100%;
+    grid-area: nav;
+}
+
+main {
+    width: 70%;
+    grid-area: main;
+}
+
+aside {
+    width: auto;
+    grid-area: aside;
+}
+
+footer {
+    width: 100%;
+    grid-area: footer;
+}

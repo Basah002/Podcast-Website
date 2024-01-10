@@ -1,0 +1,225 @@
+/*
+Beginn style.css
+*/
+h1 {
+    display: inline-block;
+
+    color: deepskyblue;
+    border: 2px solid green;
+    background-color: gray;
+}
+
+h2 {
+    background-color: rgba(227, 25, 25, 0.711);
+    color: deepskyblue;
+
+}
+
+h4 {
+    color: deepskyblue;
+    background-color: rgba(220, 105, 105, 0.135);
+
+}
+
+nav,
+aside {
+    background-color: darkgray;
+
+}
+
+
+
+nav a {
+    text-decoration: none;
+}
+
+aside {
+    border: solid 1px;
+    background-color: rgba(220, 105, 105, 0.135);
+    padding-top: 0px;
+    margin-top: 20px;
+
+    border-radius: 5px;
+
+}
+
+aside h2 {
+    margin-top: 0px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+nav a[href] {
+    color: white;
+    background-color: rgb(212, 129, 129);
+    border: solid 1px;
+    border-radius: 3px;
+}
+
+nav a[href]:hover {
+
+    background-color: rgb(0, 60, 112);
+}
+
+#effect thead>tr:nth-child(odd) {
+    background-color: aqua;
+
+}
+
+#effect tbody>tr:nth-child(odd) {
+    background-color: rgb(255, 164, 164);
+
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif
+}
+
+.mail::before {
+    content: "✉";
+
+}
+
+.titlePicture {
+    float: left;
+
+}
+
+nav {
+    clear: both;
+
+
+}
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+footer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+/*
+Beginn forms.css
+*/
+fieldset,
+label {
+    font-weight: 900;
+}
+
+input:invalid {
+    /* background-color: rgba(255, 0, 0, 0.138);*/
+    border-color: rgba(227, 25, 25, 0.711);
+}
+
+
+input:active {
+    background-color: rgb(227, 227, 93);
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}
+
+input[type="submit"] {
+    background-color: rgb(160, 212, 255);
+    border-radius: 5px;
+
+}
+
+input[type="submit"]:hover {
+    color: red;
+}
+
+legend {
+    border: solid 2px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+fieldset {
+    border: solid 1px;
+
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+input {
+
+    border: solid 1px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}
+
+/*
+Beginn flex.css
+*/
+
+#index {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#ep {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#indexcontain {
+    width:60%;
+    float: left;
+    display: flex;
+    flex-direction: column-reverse;
+
+
+}
+
+#search {
+    display: flex;
+    align-self: flex-end;
+
+}
+
+#epcontain {
+    width: 50%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer {
+    clear: left;
+}
+
+#kacheln{
+    display: flex;
+    flex-flow:row wrap;
+   /* justify-content: space-around;*/
+}
+
+
+#kacheln div {
+    width: auto;
+    height: auto;
+    margin: 5px;
+}
+#kacheln div p {
+width: 250px;
+}
+
+#btn1{
+
+    margin: 5px;
+}

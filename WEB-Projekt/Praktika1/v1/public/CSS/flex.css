@@ -1,0 +1,56 @@
+
+footer,nav,header{
+   display: flex;
+   flex: 0 1 auto;
+}
+
+#index {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+#ep {
+    display: flex;
+    flex-direction: column;
+
+}
+aside{
+    height: auto;
+}
+
+#indexcontain {
+    width: 60%;
+    float: left;
+    display: flex;
+    flex-direction: column-reverse;
+
+
+}
+
+#search {
+    display: flex;
+    align-self: flex-end;
+
+}
+
+#epcontain {
+    width: 60%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+
+}
+
+footer {
+    clear: left;
+}
+
+@media screen and (max-width:768px) {
+    body{
+        display:flex;
+        flex-direction:column;
+    }  
+    
+}

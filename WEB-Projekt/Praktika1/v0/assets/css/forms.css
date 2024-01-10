@@ -1,0 +1,52 @@
+fieldset,
+label {
+    font-weight: 900;
+}
+
+input:invalid {
+    /* background-color: rgba(255, 0, 0, 0.138);*/
+    border-color: rgba(227, 25, 25, 0.711);
+}
+
+
+input:active {
+    background-color: rgb(227, 227, 93);
+}
+
+.required::after {
+    content: "*";
+    color: red;
+}
+
+input[type="submit"] {
+    background-color: rgb(160, 212, 255);
+    border-radius: 5px;
+
+}
+
+input[type="submit"]:hover {
+    color: red;
+}
+
+legend {
+    border: solid 2px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+fieldset {
+    border: solid 1px;
+
+    border-bottom: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+input {
+
+    border: solid 1px;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+}

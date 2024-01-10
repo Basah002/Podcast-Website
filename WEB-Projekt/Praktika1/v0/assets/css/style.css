@@ -1,0 +1,102 @@
+h1 {
+    display: inline-block;
+
+    color: deepskyblue;
+    border: 2px solid green;
+    background-color: gray;
+}
+
+h2 {
+    background-color: rgba(227, 25, 25, 0.711);
+    color: deepskyblue;
+
+}
+
+h4 {
+    color: deepskyblue;
+    background-color: rgba(220, 105, 105, 0.135);
+
+}
+
+nav,
+aside {
+    background-color: darkgray;
+
+}
+
+
+
+nav a {
+    text-decoration: none;
+}
+
+aside {
+    border: solid 1px;
+    background-color: rgba(220, 105, 105, 0.135);
+    padding-top: 0px;
+    margin-top: 20px;
+
+    border-radius: 5px;
+
+}
+
+aside h2 {
+    margin-top: 0px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+nav a[href] {
+    color: white;
+    background-color: rgb(212, 129, 129);
+    border: solid 1px;
+    border-radius: 3px;
+}
+
+nav a[href]:hover {
+
+    background-color: rgb(0, 60, 112);
+}
+
+#effect thead>tr:nth-child(odd) {
+    background-color: aqua;
+
+}
+
+#effect tbody>tr:nth-child(odd) {
+    background-color: rgb(255, 164, 164);
+
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif
+}
+
+.mail::before {
+    content: "✉";
+
+}
+
+.titlePicture {
+    float: left;
+
+}
+
+nav {
+    clear: both;
+
+
+}
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+footer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
